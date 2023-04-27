@@ -8,7 +8,7 @@ const ecran = document.querySelector('.ecran');
 // Ajoute un écouteur d'événements pour détecter les frappes de clavier
 document.addEventListener('keydown', (e) => {
     // Récupère la valeur de la touche pressée
-    const valeur = e.key;
+    const valeur = e.target.dataset.key; 
     // Appelle la fonction de calcul avec cette valeur
     calculer(valeur);
 });
